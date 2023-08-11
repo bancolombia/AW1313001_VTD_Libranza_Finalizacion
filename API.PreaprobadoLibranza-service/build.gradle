@@ -1,0 +1,28 @@
+apply plugin: 'java'
+
+description = 'API.PreaprobadoLibranza-service'
+
+dependencies {
+    compile group: 'io.swagger', name: 'swagger-annotations', version: '1.5.0'
+    compile group: 'com.google.code.gson', name: 'gson', version:'2.2.4'
+	compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.5'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.2.1'
+	compile group: 'org.codehaus.jackson', name: 'jackson-mapper-asl', version: '1.8.4'
+
+	compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.7'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.7'
+	compile group: 'com.sun.jersey', name: 'jersey-client', version: '1.19'
+    compile group: 'com.sun.jersey', name: 'jersey-json', version: '1.19'
+    compile group: 'commons-io', name: 'commons-io', version: '2.6'
+    compile group: 'org.codehaus.jackson', name: 'jackson-jaxrs', version: '1.1.1'
+    compile group: 'org.hibernate', name: 'hibernate-validator', version: '4.2.0.Final'
+    compile group: 'org.apache.pdfbox', name: 'pdfbox', version: '2.0.1'
+    compile group: 'org.apache.velocity', name: 'velocity', version:'1.7'
+    compile group: 'com.itextpdf', name: 'itextpdf', version: '5.5.13.1'
+    compile group: 'com.itextpdf.tool', name: 'xmlworker', version: '5.5.13.1'
+
+    testCompile 'javax:javaee-api:7.0'
+    testCompile group:'com.sun.jersey', name: 'jersey-json', version: '1.19'
+    testCompile group:'com.sun.jersey', name: 'jersey-client', version: '1.19'
+
+}
